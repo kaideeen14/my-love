@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for you my love</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255,154,158,1) 0%, rgba(250,208,196,1) 100%);
+    background-size: cover;
+    animation: backgroundAnimation 30s ease infinite;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  @keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    50% { background-position: 100% 0; }
+    100% { background-position: 0 0; }
+  }
+
+  #letter {
+    cursor: pointer;
+    font-size: 120px;
+  }
+
+  #message {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    color: #444;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: color 5s ease;
+  }
+
+  .color-change {
+    animation: colorChange 20s infinite alternate;
+  }
+
+  @keyframes colorChange {
+    0% { color: #ff758c; }
+    25% { color: #845ec2; }
+    50% { color: #f9f97150; }
+    75% { color: #ff9671; }
+    100% { color: #ffc75f; }
+  }
+</style>
+</head>
+<body>
+
+<div id="letter">💌</div>
+<div id="message" class="color-change">
+  <p>💖 Alicia, my love,</p>
+  <p>Just like a melody from a Taylor Swift song, 💖<br>
+  You harmonize my life, making me feel strong.<br>
+  In the quiet of the night, when sleep seems so far,<br>
+  You're my shining star, my guiding North Star. 💖</p>
+  
+  <p>You're the princess of my heart, the ruler of my world,<br>
+  With every beat of my heart, your love is unfurled.<br>
+  You stand by me with grace, through every twist and turn,<br>
+  In your eyes, I see our future, bright and firm. 💖</p>
+  
+  <p>Life without you, my dear, would lose all its grace,<br>
+  For you are the angel that time cannot erase.<br>
+  So here's my love, in words, simple and true,<br>
+  Alicia, my darling, I'm so in love with you. 💖</p>
+  
+  <p>Forever and always,<br>
+  [your papa]</p>
+</div>
+
+
+<div style="display: none;">
+  <iframe src="https://www.youtube.com/embed/CxcEqhy4yKg?autoplay=1&loop=1&playlist=CxcEqhy4yKg&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<script>
+  var letter = document.getElementById('letter');
+  var message = document.getElementById('message');
+
+  letter.addEventListener('click', function() {
+    
+    this.style.display = 'none';
+    
+    message.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
